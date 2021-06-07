@@ -20,15 +20,15 @@ downloading chunk 0-719306752 of 2877227008
 downloading chunk 719306752-1438613504 of 2877227008
 downloading chunk 1438613504-2157920256 of 2877227008
 downloading chunk 2157920256-2877227008 of 2877227008
-chunk 0-719306752 done
 chunk 2157920256-2877227008 done
-chunk 719306752-1438613504 done
 chunk 1438613504-2157920256 done
+chunk 719306752-1438613504 done
+chunk 0-719306752 done
 done
 
-real    5m47,582s
-user    1m37,861s
-sys     2m31,044s
+real    1m27,444s
+user    1m2,438s
+sys     1m37,944s
 
 # 1 thread
 $ time ./concurrent-download -t 1 -d ubuntu.iso https://ftp.halifax.rwth-aachen.de/ubuntu-releases/20.04.2.0/ubuntu-20.04.2.0-desktop-amd64.iso
@@ -36,7 +36,7 @@ downloading chunk 0-2877227008 of 2877227008
 chunk 0-2877227008 done
 done
 
-real    5m58,579s
-user    1m16,006s
-sys     1m52,515s
+real    1m44,350s
+user    0m58,909s
+sys     1m28,648s
 ```
